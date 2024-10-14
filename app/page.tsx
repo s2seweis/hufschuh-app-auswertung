@@ -1,5 +1,10 @@
 "use client";
 
+//@ts-ignore
+global.performance = global.performance || {
+  now: () => new Date().getTime(),
+};
+
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
