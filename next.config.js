@@ -1,7 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Remove the experimental.appDir option if it's still there
-  // The App Router is now enabled by default
+const { performance } = require('perf_hooks');
+
+if (typeof globalThis.performance === 'undefined') {
+  globalThis.performance = performance;
 }
 
-module.exports = nextConfig;
+module.exports = {
+  // your existing Next.js config
+};
