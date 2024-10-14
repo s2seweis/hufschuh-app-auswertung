@@ -1,0 +1,4 @@
+module.exports = {
+  presets: ['next/babel'], // This is required for Next.js
+  plugins: []
+};

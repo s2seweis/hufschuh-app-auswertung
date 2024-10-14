@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { nanoid } from "nanoid";
 import styled from "styled-components";
 
@@ -22,18 +22,17 @@ const Style = styled.div`
   }
 `;
 
-// @ts-ignore
+// @ts-ignore: Ignore the TypeScript error here
 export default function ZoomImage({ src, alt = "" }) {
-  // const [checked, setChecked] = useState(false)
   const uid = nanoid();
 
   return (
+    // @ts-ignore: Ignore TypeScript error for the next line
     <Style key={nanoid()}>
       <div className={"container"}>
         <input
           type="checkbox"
           id={uid}
-          // onClick={e => setChecked(e.target.checked)}
         />
         <label htmlFor={uid}>
           <img src={src} alt={alt} />
