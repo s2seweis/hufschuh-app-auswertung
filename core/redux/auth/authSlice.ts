@@ -34,9 +34,13 @@ export const authSlice = createSlice({
         state.tokens = action.payload.tokens;
       }
     },
+    logout: (state) => {
+      state.user = undefined;
+      state.tokens = undefined;
+    },
   },
 });
 
-export const { setCredentials } = authSlice.actions;
+export const { setCredentials, logout } = authSlice.actions;
 
 export default authSlice.reducer;

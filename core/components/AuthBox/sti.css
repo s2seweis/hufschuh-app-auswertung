@@ -51,6 +51,7 @@
     }
 }
 .auth-box-root {
+    height: auto !important;
     margin: 1rem 0;
     width: calc(384px - 2 * 32px);
     padding: 32px;

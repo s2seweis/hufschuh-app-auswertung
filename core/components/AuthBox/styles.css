@@ -60,6 +60,7 @@ body.div {
   }
 }
 .auth-box-root {
+  height: auto !important;
   margin: 1rem 0;
   width: calc(384px - 2 * 32px);
   padding: 32px;
@@ -71,6 +72,7 @@ body.div {
   box-shadow: hsl(0, 0%, 50%) 0 4px 10px 0,
     hsl(257, 100%, 80%) 0px 0px 20px -6px;
   background-color: white;
+
 }
 .auth-box-form {
   background-color: white;
